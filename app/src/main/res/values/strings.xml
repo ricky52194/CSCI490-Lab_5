@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CSCI490_Lab_5</string>
+    <string name="submit">Submit</string>
+    <string name="list">List</string>
+</resources>
