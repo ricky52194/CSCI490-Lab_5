@@ -17,17 +17,17 @@ import java.util.ArrayList;
 
 public class MyAsyncTask2 extends AsyncTask<Void, Void, ArrayList<Person>> {
 
-    private LabDatabase database;
+    private LabDatabase personDB;
     Context context;
 
-    public MyAsyncTask2(LabDatabase database, Context context){
-        this.database = database;
+    public MyAsyncTask2(LabDatabase personDB, Context context){
+        this.personDB = personDB;
         this.context = context;
     }
 
     @Override
     protected ArrayList<Person> doInBackground(Void... voids) {
-        ArrayList<Person> persons = (ArrayList) database.personDao().getAllPersons();
+        ArrayList<Person> persons = (ArrayList) personDB.personDao().getAllPersons();
         return persons;
     }
 

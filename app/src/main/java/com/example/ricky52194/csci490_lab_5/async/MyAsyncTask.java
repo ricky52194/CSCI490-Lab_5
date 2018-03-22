@@ -1,5 +1,6 @@
 package com.example.ricky52194.csci490_lab_5.async;
 
+import android.content.Context;
 import android.os.AsyncTask;
 
 import com.example.ricky52194.csci490_lab_5.data.LabDatabase;
@@ -13,7 +14,7 @@ public class MyAsyncTask extends AsyncTask<String, Void, Void> {
 
     LabDatabase database;
 
-    public MyAsyncTask(LabDatabase database){
+    public MyAsyncTask(LabDatabase database, Context applicationContext){
         this.database = database;
     }
 
